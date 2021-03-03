@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(238, 228, 228);
+    font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-weight: normal;
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 70px;
+    /* padding: 30px; */
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+header > ul {
+    text-decoration: none;
+    padding-left: 0;
+    margin: 30px;
+    font-size: 20px;
+    position: relative;
+    font-weight: 900;
+    color: rgb(51, 51, 51);
+    list-style: none;
+}
+
+header > ul > li {
+    text-align: center;
+}
+
+header > ul > li:first-child{
+    float: left; 
+}
+
+header > ul > li:last-child{
+    float: right; 
+}
+
+#main {
+    padding-top: 50px;
+    width: 80%;
+    /* border: 1px solid grey; */
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-title {
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.profile {
+    /* display: inline; */
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
+article > ul {
+    text-align: left;
+    /* display: inline; */
+    width: 33%;
+    /* position: relative; */
+    float: left;
+}
+
+article > ul > li:first-child {
+    list-style: none;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.travel {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 700px;
+}
+
+.gallery {
+    position: relative;
+}
+
+.img-wrap {
+    width: 33%;
+    position: relative;
+    float: left;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.gallery .img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 25px;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#shanghai {
+    background-image: url(../img/상해.jpg);
+    background-size: 250px;
+}
+
+#hochiminh {
+    background-image: url(../img/호치민.jpg);
+    background-size: 250px;
+}
+
+#jeju {
+    background-image: url(../img/제주.jpg);
+    background-size: 250px;
+}
+
+/* .gallery .img-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+} */
+
+.gallery .img-cover {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0); 
+    /* position: relative; */
+}
+
+.img .text {
+    position: absolute;
+    position: absolute;
+    color: black;
+    font-weight: 900;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    text-align: center;
+}
+
+.text{
+    /* opacity: 0; */
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+}
+
+/* .text h1 {
+    font-weight: 900;
+    
+} */
+
+.gallery .text:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+footer {
+    float: right;
+    clear: both;
+    margin: 10px auto;
+    padding: 100px;
+    max-width: 1200;
+    height: 70px;
+  }
+  
