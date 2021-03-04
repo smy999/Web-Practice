@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lotto.css">
+
+    <title>lotto</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <button id="draw" onclick="reloadPage();">추첨하기!!</button>
+        <div id="content">
+            <div class="box" id="numbers">
+                <div class="ball" id="1st">1</div>
+                <div class="ball" id="2nd">2</div>
+                <div class="ball" id="3rd">3</div>
+                <div class="ball" id="4th">4</div>
+                <div class="ball" id="5th">5</div>
+                <div class="ball" id="6th">6</div>
+            </div>
+            <div class="box" id="plus"><img src="/img/add.png" alt=""></div>
+            <div class="box" id="bonus">
+                <div class="ball" id="7th">7</div>
+            </div>
+            <span style="width: 70%; float: left;">당첨번호</span>
+            <span style="width: 15%; float: right;">보너스</span>
+        </div>
+    </div>
+
+
+    <script>
+        var lotto = new Array();
+        var ids = ["1st", "2nd", '3rd']
+        var color = ["lightsalmon", "mediumslateblue", "navajowhite", "royalblue", "teal", "palevioletred", "dimgrey"];
+
+        function reloadPage() {
+
+            const balls = document.querySelectorAll(".ball");
+
+            for (let i = 0; i < balls.length; i++) {
+                balls.item(i).style.visibility = "hidden";
+            }
+
+            lotto = [];
+            let cnt = 0;
+
+            while (cnt < 7) {
+                let n = Math.floor(Math.random() * 45) + 1;
+                if (!check(n)) {
+                    lotto.push(n);
+                    console.log(lotto[cnt]);
+                    cnt++;
+                }
+            }
+
+
+
+            var idx = 0;
+            let interval = setInterval(function () {
+                balls.item(idx).style.backgroundColor = color[idx];
+                balls.item(idx).style.color = "rgba(0, 0, 0, 1)";
+                balls.item(idx).style.border = "2px solid black";
+                balls.item(idx).innerHTML = lotto[idx];
+                balls.item(idx).style.visibility = "visible";
+                console.log(balls.item(idx));
+                idx++;
+            }, 750);
+
+            setTimeout(function () {
+                clearTimeout(interval);
+            }, 5300);
+        }
+
+
+
+        function check(n) {
+            for (let i = 0; i < lotto.length; i++) {
+                if (n == lotto[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

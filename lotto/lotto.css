@@ -1,0 +1,93 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#wrapper {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 200px;
+}
+
+#wrapper>button {
+    border: 2px solid lightcoral;
+    background-color: white;
+    border-radius: 0px;
+    outline: none;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: lightcoral;
+    font-weight: bold;
+}
+
+#wrapper>button:hover {
+    background-color: lightcoral;
+    color: lightcyan;
+    cursor: pointer;
+}
+
+#content {
+    padding-top: 100px;
+
+}
+
+#content .box {
+    float: left;
+    text-align: center;
+    min-height: 100px;
+}
+
+#content>span {
+    display: block;
+}
+
+#numbers,
+#bonus {
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    margin: auto;
+}
+
+#numbers {
+    width: 70%;
+}
+
+#plus {
+    width: 15%;
+    line-height: 100px;
+}
+
+#plus>img {
+    width: 40%;
+    margin: auto;
+    vertical-align: middle;
+    -webkit-filter: opacity(.3);
+    filter: opacity(.3);
+}
+
+#bonus {
+    width: 15%;
+    text-align: center;
+}
+
+/* float 가운데 정렬: 부모에 text-align:center 자식에 display:inline-block */
+.ball {
+    width: 85px;
+    height: 85px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 85px;
+    color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 900;
+    visibility: hidden;
+}
+
+#content>span {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
