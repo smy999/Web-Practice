@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<userlists>
+	<user>
+		<id>user1</id>
+		<password>1111</password>
+		<name>서싸피</name>
+		<phone>01011112222</phone>
+        <email>user1@user.com</email>
+        <addr>서울</addr>
+	</user>
+    <user>
+		<id>user2</id>
+		<password>2222</password>
+		<name>김싸피</name>
+		<phone>01022223333</phone>
+        <email>user2@user.com</email>
+        <addr>대전</addr>
+	</user>
+    <user>
+		<id>user3</id>
+		<password>3333</password>
+		<name>김싸피</name>
+		<phone>01033334444</phone>
+        <email>user3@user.com</email>
+        <addr>광주</addr>
+	</user>
+</userlists>
+
+
